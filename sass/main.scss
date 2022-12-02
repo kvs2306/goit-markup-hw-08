@@ -1,0 +1,27 @@
+@import "./utils/variables";
+@import"./utils/_visuli-hiden";
+@import"./base/base.scss";
+@import"./layouts/title";
+@import"./base/container";
+@import"./base/section";
+
+@import "./components/page_header";
+@import"./utils/header-curent";
+
+@import"./components/hero-section";
+
+@import"./components/speciality-section";
+
+@import"./components/practice-section";
+
+@import"./components/team-section";
+
+@import"./components/clients-section";
+
+@import"./components/page-footer";
+
+@import"./components/filter-buttons";
+
+@import"./components/porfolio-top-menu";
+
+@import"./components/modal";
