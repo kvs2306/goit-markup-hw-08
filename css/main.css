@@ -1205,10 +1205,20 @@ body {
 .check-icon {
   position: absolute;
   left: 15px;
-  top: 4px;
+  top: -2px;
   display: block;
   border: 2px solid var(--title-color);
   border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .check-icon {
+    top: -2px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-icon {
+    top: 4px;
+  }
 }
 
 .privacy-subtitle {
@@ -1216,14 +1226,13 @@ body {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   display: block;
+  margin-bottom: 20px;
+  margin-left: 36px;
 }
 @media screen and (min-width: 1200px) {
   .privacy-subtitle {
     font-size: 14px;
     line-height: 1.7142857143;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    margin-left: 36px;
   }
 }
 
