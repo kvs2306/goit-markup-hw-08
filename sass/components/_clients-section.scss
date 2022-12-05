@@ -1,13 +1,14 @@
 .clients-menu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
 
   @include desctop {
     display: flex;
-    gap: 30px;
   }
+}
+
+.clients-item {
 }
 
 .client-active {
@@ -16,7 +17,6 @@
   align-items: center;
   justify-content: center;
   width: 210px;
-
   height: 92px;
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
@@ -53,6 +53,7 @@
 }
 
 .icon-client {
+  align-self: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--social-link-color);
 
