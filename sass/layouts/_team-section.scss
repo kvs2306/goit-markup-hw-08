@@ -5,12 +5,11 @@
 .team-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 30px;
 
   @include tablet {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
   }

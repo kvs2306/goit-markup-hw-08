@@ -505,13 +505,12 @@ body {
 .team-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .team-menu {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -601,6 +600,7 @@ body {
 .clients-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 @media screen and (min-width: 1200px) {

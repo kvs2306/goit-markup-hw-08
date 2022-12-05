@@ -1,14 +1,12 @@
 .clients-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 
   @include desctop {
     display: flex;
   }
-}
-
-.clients-item {
 }
 
 .client-active {
@@ -23,18 +21,16 @@
 
   @include tablet {
     width: 226px;
-    // width: calc((100% - 2 * 30px) / 3);
   }
 
   @include desctop {
     width: 170px;
-    // width: calc((100% - 5 * 30px) / 6);
   }
 
   &:hover,
   &:focus {
     width: 210px;
-    // width: calc((100% - 30px) / 2);
+
     border: 1px solid var(--akcent-color);
     border-radius: 4px;
     outline: transparent;
@@ -42,12 +38,10 @@
 
     @include tablet {
       width: 226px;
-      //   width: calc((100% - 2 * 30px) / 3);
     }
 
     @include desctop {
       width: 170px;
-      //   width: calc((100% - 5 * 30px) / 6);
     }
   }
 }
