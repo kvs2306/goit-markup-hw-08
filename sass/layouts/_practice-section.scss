@@ -1,11 +1,5 @@
 .section-practice {
-  @include mobile {
-    display: none;
-  }
-
-  @include tablet {
-    display: none;
-  }
+  display: none;
 
   @include desctop {
     display: block;

@@ -50,7 +50,7 @@ body {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .title {
     margin-bottom: 30px;
     font-weight: 700;
@@ -399,7 +399,7 @@ body {
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .speciality__item {
     max-width: 450px;
     align-self: center;
@@ -450,15 +450,8 @@ body {
   background-color: var(--special-bgd-color);
 }
 
-@media screen and (max-width: 767px) {
-  .section-practice {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section-practice {
-    display: none;
-  }
+.section-practice {
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   .section-practice {
@@ -667,7 +660,7 @@ body {
   align-items: baseline;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .section-footer__container {
     display: flex;
     flex-direction: column;
@@ -933,7 +926,7 @@ body {
   right: 28px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .filter-menu {
     display: flex;
     gap: 8px;
@@ -980,7 +973,7 @@ body {
   gap: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .item-top {
     width: 450px;
   }
@@ -1091,14 +1084,19 @@ body {
   box-shadow: var(--modal-box-shadov);
   border-radius: 4px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
   .modal {
     min-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
+    width: 528px;
   }
 }
 
@@ -1214,18 +1212,18 @@ body {
 }
 
 .privacy-subtitle {
-  display: block;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
-  margin-left: 36px;
+  display: block;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .privacy-subtitle {
-    font-size: 12px;
-    line-height: 1.1666666667;
+    font-size: 14px;
+    line-height: 1.7142857143;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    margin-left: 36px;
   }
 }
 
