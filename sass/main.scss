@@ -1,27 +1,30 @@
-@import "./utils/variables";
-@import"./utils/_visuli-hiden";
-@import"./base/base.scss";
-@import"./layouts/title";
-@import"./base/container";
-@import"./base/section";
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/_visually-hidden';
+@import './base/base.scss';
+@import './components/title';
+@import './base/container';
+@import './base/section';
+@import './utils/mod';
 
-@import "./components/page_header";
-@import"./utils/header-curent";
+@import './components/_header-logo';
+@import './layouts/page_header';
 
-@import"./components/hero-section";
+@import './components/hero-section';
 
-@import"./components/speciality-section";
+@import './layouts/speciality-section';
 
-@import"./components/practice-section";
+@import './layouts/practice-section';
 
-@import"./components/team-section";
+@import './layouts/team-section';
 
-@import"./components/clients-section";
+@import './components/clients-section';
 
-@import"./components/page-footer";
+@import './layouts/page-footer';
 
-@import"./components/filter-buttons";
+@import './components/filter-buttons';
 
-@import"./components/porfolio-top-menu";
+@import './components/porfolio-top-menu';
 
-@import"./components/modal";
+@import './components/modal';
+@import './components/menu-container';

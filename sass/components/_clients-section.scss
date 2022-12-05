@@ -1,25 +1,65 @@
 .clients-menu {
+@include mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@include tablet{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@inclde desctop{
     display: flex;
     gap: 30px;
 }
 
+}
+
 .client-active {
+@include mobile{
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--social-link-color);
     border-radius: 4px;
+}
 
+@include tablet{
+    width: 226px;
+}
+
+@include desctop{
+    width: 170px;
+}
+
+    
 &:hover,
 &:focus {
-    width: 170px;
+@include mobile{
+    width: 210px;
     border: 1px solid var(--akcent-color);
     border-radius: 4px;
     outline: transparent;
     height: 92px;
+}
+
+@include tablet{
+    width: 226px;
+}
+
+@include desctop{
+    width: 170px;
+}
+
+
     }
 }
 

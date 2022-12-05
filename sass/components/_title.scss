@@ -1,0 +1,31 @@
+.title {
+
+@include mobile{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33/28);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+@include tablet{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33/28);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+@include desctop{
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+}
