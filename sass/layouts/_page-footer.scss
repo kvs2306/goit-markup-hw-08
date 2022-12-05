@@ -179,9 +179,9 @@
     width: 450px;
   }
   @include desctop {
-    display: flex;
     flex-direction: row;
     gap: 12px;
+    width: 570px;
   }
 }
 

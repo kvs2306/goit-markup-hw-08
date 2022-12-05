@@ -511,8 +511,8 @@ body {
 @media screen and (min-width: 768px) {
   .team-menu {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
   }
 }
 
@@ -842,9 +842,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .folows-input-box {
-    display: flex;
     flex-direction: row;
     gap: 12px;
+    width: 570px;
   }
 }
 
