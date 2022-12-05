@@ -809,6 +809,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer-folows {
@@ -821,6 +822,7 @@ body {
     margin-right: 0;
     gap: 20px;
     display: block;
+    width: 570px;
   }
 }
 
@@ -829,7 +831,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .folows-input-box {
@@ -1082,12 +1084,17 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 450px;
+  min-width: 90%;
   min-height: 609px;
   padding: 40px;
   background: var(--bgd-color);
   box-shadow: var(--modal-box-shadov);
   border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
