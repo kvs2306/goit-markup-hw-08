@@ -1,303 +1,268 @@
 .section-footer {
-    background-color: var(--footer-color);
-    background-color: var(--footer-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+  background-color: var(--footer-color);
+  background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .section-footer__container {
-@include mobile{
+  @include mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-@include tablet{
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
-}
+  }
 
-@include desctop{
+  @include desctop {
     display: flex;
     flex-wrap: wrap;
-    
-    
-}
+  }
 }
 
 .footer-adress-container {
-@include mobile{
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 60px;
-}
-@include desctop{
-    padding-bottom: 0;
-}
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 60px;
 
-@include tablet{
+  @include tablet {
     display: inline-block;
     text-align: center;
     width: 50%;
-}
+  }
 
-@include desctop{
+  @include desctop {
     width: 240px;
     text-align: left;
-}   
+    padding-bottom: 0;
+  }
 }
 
 .logo-footer {
-@include mobile{
-    margin-bottom: 20px;
-    display: block;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: calc(28/24);
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--bgd-color);      
-}    
-@include tablet{
+  margin-bottom: 20px;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--bgd-color);
 
-}
-
-   
+  @include tablet {
+  }
 }
 
 .footer-adress {
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--bgd-color);
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--bgd-color);
 }
 
 .footer-item {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    & :hover,
-    & :focus {
-        color: var(--akcent-color);
-    }
+  & :hover,
+  & :focus {
+    color: var(--akcent-color);
+  }
 
-    &:not(:last-child) {
-        margin-bottom: 9px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contact {
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--footer-contact-color);
-    text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+  text-decoration: none;
 }
-
-
 
 .footer-social-links {
-@include mobile{
-    text-align: center; 
-    padding-bottom: 60px;   
-}
-@include tablet{
+  text-align: center;
+  padding-bottom: 60px;
+
+  @include tablet {
     width: 50%;
     padding-top: 12px;
-    
-}
-@include desctop{
+  }
+  @include desctop {
     width: 210px;
     margin-left: 93px;
+    padding-bottom: 0;
+  }
 }
 
-    
-    
-}
+.footer-links__list {
+  display: flex;
+  align-self: center;
+  gap: 10px;
 
-.footer-links__list{
-@include mobile{
-    display: flex;
-    align-self: center;
-    gap: 10px;
-}
-
-@include tablet{
+  @include tablet {
     justify-content: center;
-}
+  }
 }
 
 .join-in {
-    padding-bottom: 20px;
-    font-size: 14px;
-    line-height: calc(14 / 16);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--bgd-color);
-
-    
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: calc(14 / 16);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bgd-color);
 }
 
 .footer-link-item {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     outline: transparent;
     background-color: var(--akcent-color);
+  }
 }
-}
-
-
 
 .footer-link {
-    fill: var(--bgd-color);
+  fill: var(--bgd-color);
 }
 
 .footer-folows {
-@include mobile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-@include tablet{
+  @include tablet {
     margin-left: auto;
     margin-right: auto;
-}  
+  }
 
-@include desctop{
+  @include desctop {
     margin-right: 0;
     gap: 20px;
     display: block;
+  }
 }
-    
-    
-}
-
 
 .folows-input-box {
-@include mobile{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 450px;
+
+  @include tablet {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 450px;
-}
-@include tablet{
-    align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 450px;
-}
-@include desctop{
+  }
+  @include desctop {
     display: flex;
     flex-direction: row;
     gap: 12px;
-}
-
+  }
 }
 
 .footer_folows_subtitle {
-@include mobile{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bgd-color);
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include tablet {
     font-weight: 700;
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--bgd-color);
     text-align: center;
-    margin-bottom: 20px;
-}  
-@include tablet{
+  }
+  @include desctop {
     font-weight: 700;
     font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--bgd-color);
-    text-align: center;
-   
-}
-@include desctop{
-    font-weight: 700;
-    font-size: 14px;
-    line-height:calc(16/14) ;
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: left;
-}
-    
+  }
 }
 
 .folows-input {
-@include mobile{
-    width: 100%;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: var(--footer-color);
-    padding: 15px 16px;
-    color: var(--footer-contact-color);
-    align-self: center;
-}
-@include tablet{
-    width: 450px;
-}
-@include desctop{
-    width: 358px;
-}
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--footer-color);
+  padding: 15px 16px;
+  color: var(--footer-contact-color);
+  align-self: center;
 
-    
+  @include tablet {
+    width: 450px;
+  }
+  @include desctop {
+    width: 358px;
+  }
 }
 
 .footer-folows-button {
-    position: relative;
-    padding-right: 62px;
-    padding-left: 28px;
-    cursor: pointer;
+  position: relative;
+  padding-right: 62px;
+  padding-left: 28px;
+  cursor: pointer;
 
-    width: 200px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
 
-    color: var(--bgd-color);
-    background-color: var(--akcent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: transparent;
+  color: var(--bgd-color);
+  background-color: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&s:hover,
-&s:focus {
+  &s:hover,
+  &s:focus {
     background-color: var(--button-active-color);
-    }
+  }
 }
 
 .folows-icon {
-    position: absolute;
-    display: block;
-    top: 13px;
-    right: 28px;
+  position: absolute;
+  display: block;
+  top: 13px;
+  right: 28px;
 }

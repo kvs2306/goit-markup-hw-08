@@ -15,22 +15,22 @@
 }
 
 .modal {
-  @include mobile {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    width: 450px;
-    min-height: 581px;
-    padding: 40px;
+  width: 450px;
+  min-height: 609px;
+  padding: 40px;
 
-    background: var(--bgd-color);
-    box-shadow: var(--modal-box-shadov);
-    border-radius: 4px;
+  background: var(--bgd-color);
+  box-shadow: var(--modal-box-shadov);
+  border-radius: 4px;
+
+  @include desctop {
+    max-width: 528px;
   }
-
-  // 528px
 }
 
 .btn-close {
@@ -64,11 +64,16 @@
 .modal-subtitle {
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 12px;
+
+  @include desctop {
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-form-box {
