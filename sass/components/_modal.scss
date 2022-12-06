@@ -29,11 +29,6 @@
   @include mobile {
     min-width: 450px;
   }
-
-  @include tablet {
-    min-width: 450px;
-  }
-
   @include desctop {
     width: 528px;
   }

@@ -14,6 +14,7 @@
   --modal-vindow-bgd: rgba(0, 0, 0, 0.2);
   --modal-box-shadov: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  --mobile-menu-decoraton: rgba(33, 33, 33, 0.2);
 }
 
 .visually-hidden {
@@ -313,24 +314,44 @@ body {
 }
 
 .section-hero {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  text-align: center;
   background-color: var(--footer-color);
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--hero-bgd-style-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-hero-img@1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-hero-img@2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .section-hero {
-    max-width: 768px;
+    width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet-img@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet-img@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
+    width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desctop-hero-Img@1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desctop-hero-Img@2x.jpg);
   }
 }
 
@@ -652,7 +673,6 @@ body {
 
 .section-footer {
   background-color: var(--footer-color);
-  background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -660,12 +680,10 @@ body {
   align-items: baseline;
 }
 
-@media screen and (min-width: 480px) {
-  .section-footer__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.section-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .section-footer__container {
@@ -877,7 +895,6 @@ body {
 
 .folows-input {
   width: 100%;
-  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -926,14 +943,12 @@ body {
   right: 28px;
 }
 
-@media screen and (min-width: 480px) {
-  .filter-menu {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    width: 326px;
-    padding-bottom: 40px;
-  }
+.filter-menu {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 326px;
+  padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filter-menu {
@@ -969,10 +984,19 @@ body {
 
 .top-menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .top-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
+.item-top {
+  width: 90%;
+}
 @media screen and (min-width: 480px) {
   .item-top {
     width: 450px;
@@ -980,12 +1004,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .item-top {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .item-top {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -1085,11 +1109,6 @@ body {
   border-radius: 4px;
 }
 @media screen and (min-width: 480px) {
-  .modal {
-    min-width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
   .modal {
     min-width: 450px;
   }
@@ -1282,7 +1301,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48PX 40PX;
+  padding: 48px 40px;
   background-color: var(--bgd-color);
   z-index: 2;
   display: flex;
@@ -1297,12 +1316,15 @@ body {
 
 .menu-close__button {
   position: absolute;
-  top: 21px;
-  right: 25px;
+  top: 10px;
+  right: 15px;
   background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
+}
+.menu-close__button:hover, .menu-close__button:focus {
+  fill: var(--akcent-color);
 }
 
 .close__button__icon {
@@ -1318,6 +1340,11 @@ body {
   gap: 32px;
 }
 
+.current--mobile:visited {
+  color: var(--akcent-color);
+  display: block;
+}
+
 .menu__nav__item {
   font-weight: 500;
   font-size: 40px;
@@ -1325,7 +1352,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 .menu__nav__item:hover, .menu__nav__item:focus {
   color: var(--akcent-color);
@@ -1341,11 +1368,17 @@ body {
 
 .adress--phone {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 27px;
+  line-height: 1.4814814815;
   letter-spacing: 0.02em;
   color: var(--akcent-color);
   text-decoration: none;
+}
+@media screen and (min-width: 380px) {
+  .adress--phone {
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
 }
 
 .adress--email {
@@ -1363,11 +1396,31 @@ body {
   gap: 20px;
 }
 
+.link__decoration {
+  position: relative;
+}
+
+.link__decoration ::after {
+  content: "";
+  position: absolute;
+  background-color: var(--mobile-menu-decoraton);
+  width: 1px;
+  height: 22px;
+  top: 0;
+  right: -10px;
+}
+
 .menu__link__item {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222222222;
+  font-size: 12px;
+  line-height: 1.8333333333;
   letter-spacing: 0.02em;
   color: var(--akcent-color);
   text-decoration: none;
+}
+@media screen and (min-width: 380px) {
+  .menu__link__item {
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }/*# sourceMappingURL=main.css.map */
