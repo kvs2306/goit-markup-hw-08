@@ -17,6 +17,9 @@
   &.is-open {
     transform: translateX(0);
   }
+  @include tablet {
+    display: none;
+  }
 }
 
 .menu-close__button {

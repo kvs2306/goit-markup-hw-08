@@ -69,7 +69,7 @@
     <main>
       <!-- герой -->
 
-      <section class="section-hero hero-style">
+      <section class="section-hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" data-modal-open class="section__hero__button">
@@ -142,19 +142,40 @@
           <ul class="list practice-menu">
             <li>
               <div class="practice-box">
-                <img class="practice-img" src="./img/box1.jpg" alt="developers" width="370" />
+                <img
+                  class="practice-img img"
+                  srcset="
+                    ./img/practice/desctop-img.jpg    370w,
+                    ./img/practice/desctop-img@2x.jpg 740w
+                  "
+                  sizes="(min-width-1200px) 370px 100vw"
+                  src="./img/practice/desctop-img.jpg"
+                  alt="десктопні додатки"
+                />
                 <p class="practice-descr">Десктопні додатки</p>
               </div>
             </li>
             <li>
               <div class="practice-box">
-                <img class="practice-img" src="./img/box2.jpg" alt="adaptiv" width="370" />
+                <img
+                  class="practice-img img"
+                  srcset="./img/practice/mobile-img.jpg 370w, ./img/practice/mobile-img@2x.jpg 740w"
+                  sizes="(min-width-1200px) 370px 100vw"
+                  src="./img/practice/mobile-img.jpg"
+                  alt="десктопні додатки"
+                />
                 <p class="practice-descr">Мобільні додатки</p>
               </div>
             </li>
             <li>
               <div class="practice-box">
-                <img class="practice-img" src="./img/box3.jpg" alt="design" width="370" />
+                <img
+                  class="practice-img img"
+                  srcset="./img/practice/design-img@2x.jpg 740w, ./img/practice/design-img.jpg 370w"
+                  sizes="(min-width-1200px) 370px 10vw"
+                  src="./img/practice/design-img.jpg"
+                  alt="десктопні додатки"
+                />
                 <p class="practice-descr">Дизайнерські рішення</p>
               </div>
             </li>
@@ -169,7 +190,21 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team-menu">
             <li class="team-card">
-              <img class="person-img" src="./img/ihor.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source
+                  srcset="./img/team/m-ihor-img.jpg 1x, ./img/team/m-ihor-img@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="./img/team/t-ihor-img.jpg 1x, ./img/team/t-ihor-img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="./img/team/d-ihor-img.jpg 1x, ./img/team/d-ihor-img@2x.jpg 2x"
+                />
+                <img class="img" src="./img/team/d-ihor-img.jpg" alt="продакт дезайнер" />
+              </picture>
               <div class="descr-conteiner">
                 <h3 class="person-title">Ігор Дем'яненко</h3>
                 <p class="person-descr">Product Designer</p>
@@ -207,7 +242,21 @@
             </li>
 
             <li class="team-card">
-              <img class="person-img" src="./img/olha.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="./img/team/m-olga-img.jpg 1x, ./img/team/m-olga-img@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="./img/team/t-olha-img.jpg 1x, ./img/team/t-olha-img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="./img/team/d-olha-img.jpg 1x, ./img/team/d-olha-img@2x.jpg 2x"
+                />
+                <img class="img" src="./img/team/d-olha-img.jpg" alt="фронтенд розробник" />
+              </picture>
               <div class="descr-conteiner">
                 <h3 class="person-title">Ольга Рєпіна</h3>
                 <p class="person-descr">Frontend Developer</p>
@@ -245,7 +294,21 @@
             </li>
 
             <li class="team-card">
-              <img class="person-img" src="./img/nikolai.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./img/team/m-nikolay-img.jpg 1x, ./img/team/m-nikolay-img@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="./img/team/t-nikolay-img.jpg 1x, ./img/team/t-nikolay-img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="./img/team/d-nikolay-img.jpg 1x, ./img/team/d-nikolay-img@2x.jpg 2x"
+                />
+                <img class="img" src="./img/team/d-nikolay-img.jpg" alt="маркетолог" />
+              </picture>
               <div class="descr-conteiner">
                 <h3 class="person-title">Микола Тарасов</h3>
                 <p class="person-descr">Marketing</p>
@@ -283,7 +346,21 @@
             </li>
 
             <li class="team-card">
-              <img class="person-img" src="./img/mihail.jpg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source
+                  srcset="./img/team/m-mihail-img.jpg 1x, ./img/team/m-mihail-img@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="./img/team/t-mihail-img.jpg 1x, ./img/team/t-mihail-img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="./img/team/d-mihail-img.jpg 1x, ./img/team/d-mihail-img@2x.jpg 2x"
+                />
+                <img class="img" src="./img/team/d-mihail-img.jpg" alt="маркетолог" />
+              </picture>
               <div class="descr-conteiner">
                 <h3 class="person-title">Михайло Єрмаков</h3>
                 <p class="person-descr">UI Designer</p>

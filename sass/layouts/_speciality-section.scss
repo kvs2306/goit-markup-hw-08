@@ -6,27 +6,26 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+
 .section-speciality-list {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   gap: 30px;
 
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  @include desctop {
+    margin: 0;
   }
 }
 
 .speciality__item {
-  @include mobile {
-    max-width: 450px;
-    align-self: center;
-  }
+  margin: 0 auto;
+  max-width: 450px;
 
   @include tablet {
+    margin: 0;
     width: calc((100% - 30px) / 2);
   }
 
